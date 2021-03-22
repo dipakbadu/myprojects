@@ -1,4 +1,4 @@
-function getData(){
+(function getData(){
 fetch("https://gitlab.com/api/v4/users/deepakbadu/projects")
   .then(response => {
     if (!response.ok) {
@@ -22,5 +22,4 @@ fetch("https://gitlab.com/api/v4/users/deepakbadu/projects")
   .catch(err => {
     return err
   });
-}
-getData()
+})();
